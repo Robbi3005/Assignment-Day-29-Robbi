@@ -50,32 +50,6 @@ class Controller {
             })
     }
 
-    // static createStore1(req, res) {
-
-    //     const data = req.body;
-
-    //     let id = data.id;
-    //     let petId = data.petId;
-    //     let quantity = data.quantity;
-    //     let shipDate = data.shipDate;
-    //     let status = data.status;
-    //     let complete = data.complete;
-
-    //     db.query(Store.createStore1(),
-    //         [id, petId, quantity, shipDate, status, complete], 
-    //         [id, petId, quantity, shipDate, status, complete], 
-    //         (err) => {
-
-    //             if (err) {
-    //                 res.status(400).json(err)
-    //                 return
-    //             }
-
-    //             res.status(201)
-    //             res.send(data)
-    //         })
-    // }
-
     static updateStore(req, res) {
 
         const data = req.body;
@@ -95,10 +69,10 @@ class Controller {
                     return
                 }
 
-                if (req.body.id != id) {
-                    res.send("Id does not match")
-                    return
-                }
+                // if (req.body.id != id) {
+                //     res.send("Id does not match")
+                //     return
+                // }
 
                 res.status(201)
                 res.send(req.body)

@@ -20,13 +20,13 @@ class Store {
         return sql;
     }
 
-    static createStore1() {
-        let sql = `INSERT INTO store1
-        (id, petId, quantity, shipDate, status, complete)
-        VALUES (?, ?, ?, ?, ?, ?),
-        VALUES (?, ?, ?, ?, ?, ?)`; 
-        return sql;
-    }
+    // static createStore1() {
+    //     let sql = `INSERT INTO store1
+    //     (id, petId, quantity, shipDate, status, complete)
+    //     VALUES (?, ?, ?, ?, ?, ?),
+    //     VALUES (?, ?, ?, ?, ?, ?)`; 
+    //     return sql;
+    // }
 
     static updateStore() {
         let sql = `UPDATE store1 SET 
